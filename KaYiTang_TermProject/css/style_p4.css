@@ -24,6 +24,11 @@ html body{
     min-height: 100vh;
   }
 
+.container2 {
+  position: relative;
+  margin-left: 200px;
+  padding-top: 200px;
+}
 .form-group { margin: 1.5rem auto }
 .container { margin: 150px auto; }
 .required-sign { color: red; }

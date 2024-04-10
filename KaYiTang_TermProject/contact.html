@@ -37,70 +37,71 @@
 
 		<main>
 			<div class="jquery-script-clear"></div>
-<div class="container">
-  <form id="form"></form>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./js/"></script>
-<script>
-  var User = function() {
-    var self = this;
+			<div class="container2">
+ 				 <form id="form"></form>
+				</div>
+				<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+				<script src="js/tie.js"></script>
+				<script>
+					var User = function() {
+					var self = this;
 
-    self.id = 0;
-    self.username = '';
-    self.firstname = '';
-    self.lastname = '';
-    self.email = '';
-};
-var user = new User();
-const form = $('#form')
-$('#form').TieJS({bindingSource: user});
-var tiejs = form.data('tiejs').addFields([{
-            type: "text",
-            data: {
-                label: "Username",
-                name: "username",
-                placeholder: "Username",
-                attributes: ["autofocus"],
-                required: true
-            }
-        }, {
-            type: "text",
-            data: {
-                label: "First Name",
-                name: "firstname",
-                placeholder: "First Name"
-            }
-        }, {
-            type: "text",
-            data: {
-                label: "Last Name",
-                name: "lastname",
-                placeholder: "Last Name"
-            }
-        }, {
-            type: "email",
-            data: {
-                label: "Email",
-                name: "email",
-                placeholder: "Email Address",
-                required: true
-            }
-        }
-    ]).addBindings([{
-            "username": "username",
-            "firstname": "firstname",
-            "lastname": "lastname",
-            "email": "email"
-        }
-    ]);
-</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+					self.id = 0;
+					self.username = '';
+					self.firstname = '';
+					self.lastname = '';
+					self.email = '';
+					};
+					
+					var user = new User();
+					const form = $('#form')
+					$('#form').TieJS({bindingSource: user});
+					var tiejs = form.data('tiejs').addFields([{
+						type: "text",
+						data: {
+						label: "First Name",
+						name: "First Name",
+						placeholder: "firstname",
+						attributes: ["autofocus"],
+						}
+        			}, {
+            			type: "text",
+            			data: {
+                		label: "Last Name",
+                		name: "lastname",
+                		placeholder: "Last Name"
+            			}
+        			}, {
+            			type: "text",
+            			data: {
+                		label: "Contact Number",
+                		name: "contactnumber",
+                		placeholder: "Contact Number"
+            			}
+        			}, {
+            			type: "email",
+            			data: {
+                		label: "Email",
+                		name: "email",
+                		placeholder: "Email Address",
+            			}
+        			}
+    				]).addBindings([{
+					"firstname": "firstname",
+					"lastname": "lastname",
+					"contactnumber": "contactnumber",
+					"email": "email"
+					}
+   				]);
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-1VDDWMRSTH');
-</script><script>
+</script>
+<script>
 try {
   fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
     return true;
@@ -135,8 +136,9 @@ try {
 					<i class="fa fa-twitter"></i>
 					</div>
 				</div>
-				</div>
 				<p>&copy; 2024 Lalaya Hotel. All Rights Reserved.</p>
+			</div>
+		
 		</footer>
 		
 	</div>

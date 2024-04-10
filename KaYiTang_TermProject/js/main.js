@@ -25,4 +25,3 @@ cardNext:'jsd-card--next',
 cardGhost:'jsd-card--ghost',
 }
 });
-
