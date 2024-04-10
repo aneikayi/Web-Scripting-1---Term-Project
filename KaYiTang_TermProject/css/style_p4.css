@@ -10,7 +10,7 @@ html body{
   background-image: url(../img/contactus.jpg);
   position: absolute;
   background-size: cover;
-  background-repeat: no-repeat;
+
   min-height: 100vh;
   position: relative;
   padding-bottom: 70px;
@@ -32,6 +32,11 @@ html body{
 .form-group { margin: 1.5rem auto }
 .container { margin: 150px auto; }
 .required-sign { color: red; }
+
+.contactdm{
+  position: flex;
+  margin-left: 200px;
+}
 
   
 nav a:hover{
@@ -132,6 +137,12 @@ footer.footer-bar{
     
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
+
+    .container2 {
+    position: relative;
+    margin-right: 250px;
+    padding-top: 200px;
+    }
     
   }
   
@@ -148,6 +159,17 @@ footer.footer-bar{
         float: none;
         text-align: left;
     }
+
+    .container2 {
+    position: relative;
+    margin-left: -50px;
+    padding-top: 200px;
+    }
+
+    .contactdm{
+    position: flex;
+    margin-left: -50px;
+}
 
   }
 
