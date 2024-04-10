@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html body{
+    font-family: "Oswald";
+    font-size: 16px;
+    display: cover;
+    background-image: url(../img/overview_bg.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 70px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh; 
+  }
+
+.card1 h1{
+    font-size: 2em;
+    padding-top: 100px;
+    text-align: left;
+    color: rgb(114, 239, 19);
+    line-height: 1;
+  }
+
+.card2 h1{
+    font-size: 2em;
+    padding-top: 100px;
+    text-align: left;
+    color: rgb(114, 239, 19);
+    line-height: 1;
+  }
+
+.card3 h1{
+    font-size: 2em;
+    padding-top: 100px;
+    text-align: left;
+    color: rgb(114, 239, 19);
+    line-height: 1;
+  }
+  
+nav a:hover{
+    color: #ffffff;
+  }
+
+nav ul{
+    flex-direction: column;
+    overflow-y: hidden;
+    max-height: 0;
+  }
+
+#hamburger{
+    text-align: left;
+  }
+
+a#hamburger:hover{
+    background-color: rgb(85, 21, 21);
+  }
+
+div.main-content{
+    padding: 1px 16px;
+    height: 100vh;
+  }
+
+nav.toggleMenu ul{
+    display: flex;
+    max-height: 40vh;
+  }
+
+i.hide{
+    display:none;
+  }
+
+.lalaya-logo{
+    width: 60%;
+    margin-left: 300px;
+  }
+
+footer.footer-bar{
+    background-color: rgb(85, 21, 21);
+    font-size: 0.4em;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;   
+  }   
+
+.footer-column{
+    margin-bottom: 16px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+.social{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    float: right;
+  }
+
+.icon{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+  }
+
+.sidebar{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+  }
+  
+.sidebar a{
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+    position: relative;
+  }
+   
+.sidebar a.active{
+    display: block;
+  }
+  
+.sidebar a:hover:not(.active){
+    background-color: #5aaff4;
+    color: white;
+  }
+
+.fsd{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  color: red;
+}
+
+section.card1{
+  display: flex;
+  padding: 60px 100px 100px 100px;
+  background-image: url(../img/welcome.jpg);
+  background-size: 90%;
+  opacity: 80%;
+  }
+
+.card1 p{
+  font-size: 1.5em;
+  text-align: left;
+  padding-right: 60px;
+  padding-top: 20px;
+  color: yellow;
+  line-height: 1.4;
+}
+
+section.card2{
+  display: flex;
+  padding: 60px 100px 100px 100px;
+  background-image: url(../img/pool.jpg);
+  background-size: 70%;
+  opacity: 80%;
+  overflow-x: hidden;
+}
+
+.card2 p{
+  font-size: 1.5em;
+  text-align: left;
+  padding-right: 60px;
+  padding-top: 20px;
+  color: yellow;
+  line-height: 1.4;
+}
+
+section.card3{
+  display: flex;
+  padding: 60px 100px 100px 100px;
+  background-image: url(../img/service.jpg);
+  background-size: 90%;
+  opacity: 80%;
+}
+
+.card3 p{
+  font-size: 1.5em;
+  text-align: left;
+  padding-right: 60px;
+  padding-top: 20px;
+  color: yellow;
+  line-height: 1.4;
+}
+
+
+@media screen and (max-width: 768px){
+  .sidebar{
+      width: 100%;
+      height: auto;
+      position: fixed;
+      z-index: 1000;
+      display: block;
+    }
+  
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  .lalaya-logo{
+      width: 60%;
+      margin-left: 150px;
+    }
+  
+  .card1 h1{
+      font-size: 1.5em;
+      margin-left: -30px;
+    }
+
+  .card1 p{
+      width: 100%;
+      font-size: 1em;
+      margin-left: -30px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+  .card2 h1 {
+      font-size: 1.5em;
+      margin-left: -30px;
+    }
+  
+  .card2 p {
+      width: 100%;
+      font-size: 1em;
+      margin-left: -30px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+  .card3 h1{
+      font-size: 1.5em;
+      margin-left: -30px;
+    }
+    
+  .card3 p{
+      width: 100%;
+      font-size: 1em;
+      margin-left: -30px;
+      text-align: left;
+      line-height: 1.2;
+    }
+  }
+  
+@media screen and (max-width: 375px){
+  .lalaya-logo{
+      padding-top: 10px;
+      width: 60%;
+      margin-left: 64px;
+    }
+
+  .card1 h1{
+      padding-top: 50px;
+      font-size: 1.5em;
+      margin-left: -30px;
+    }
+
+  .card1 p{
+      width: 130%;
+      font-size: 0.8em;
+      margin-left: -30px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+  .card2 h1{
+      padding-top: 10px;
+      font-size: 1.5em;
+      margin-left: -30px;
+    }
+  
+  .card2 p{
+      width: 130%;
+      font-size: 0.8em;
+      margin-left: -30px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+  .card3 h1{
+      padding-top: 10px;
+      font-size: 1.5em;
+      margin-left: -30px;
+    }
+    
+  .card3 p{
+      width: 130%;
+      font-size: 0.8em;
+      margin-left: -30px;
+      text-align: left;
+      line-height: 1.2;
+    }
+  }
+  
+@media screen and (min-width:1440px){
+    h1{
+        font-size: 2.5em;
+      }
+  }

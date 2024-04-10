@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html body{
+    font-family: "Oswald";
+    font-size: 16px;
+    display: cover;
+    background-image: url(../img/acom_bg.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 70px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh; 
+  }
+
+.useSliderPlugin h1{
+    font-size: 3em;
+    padding-top: 50px;
+    text-align: left;
+    color: blue;
+    line-height: 2;
+    margin-left: 500px;
+  }
+
+.useSliderPlugin p{
+  font-size: 1.4em;
+  color: #5aaff4;
+  margin-right: 180px;
+  text-align: left;
+  border: yellow 10px;
+  margin-left: 500px;
+  display: block;
+  padding-bottom: 100px;
+    }
+
+.useSliderPlugin img{
+    width: 300px;
+    height: auto;
+    margin-left: 200px;
+    padding-top: 50px;
+  }
+
+/* popup images */
+.useSliderPlugin {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.fullScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    }
+
+#maximizedImg {
+    max-width: 80vw; /* Limits width to a percentage of its container */
+    max-height: 80vh; /* Limits height to a percentage of the viewport height */
+    object-fit: contain; /* Ensures the image is scaled correctly within its constraints */
+}
+
+nav a:hover{
+    color: #ffffff;
+  }
+
+nav ul{
+    flex-direction: column;
+    overflow-y: hidden;
+    max-height: 0;
+  }
+
+#hamburger{
+    text-align: left;
+  }
+
+a#hamburger:hover{
+    background-color: rgb(85, 21, 21);
+  }
+
+div.main-content {
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+nav.toggleMenu ul{
+    display: flex;
+    max-height: 40vh;
+  }
+
+i.hide{
+    display:none;
+  }
+
+footer.footer-bar{
+      background-color: rgb(85, 21, 21);
+      font-size: 0.4em;
+      color: #fff;
+      text-align: center;
+      padding-top: 10px;
+      height: 60px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+
+.footer-column{
+    margin-bottom: 16px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+.social{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    float: right;
+  }
+
+.icon{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+  }
+
+.sidebar{
+    margin: 0;
+    padding: 0;
+  }
+  
+.sidebar a{
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+.sidebar a.active{
+    display: block;
+  }
+  
+.sidebar a:hover:not(.active){
+    background-color: #5aaff4;
+    color: white;
+  }
+
+.fimg{
+    width: 10px;
+  }
+  
+@media screen and (max-width: 768px){
+    .sidebar {
+        width: 100%;
+        height: auto;
+        z-index: 1000;
+        display: block;
+    }
+    
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+
+    .useSliderPlugin{
+        width: 150%;
+    }
+
+    .useSliderPlugin div{
+        width: 50%;
+        float: left;
+    }
+    
+    .useSliderPlugin h1{
+        font-size: 2.5em;
+        padding-top: 50px;
+        text-align: left;
+        color: blue;
+        line-height: 2;
+        margin-left: -120px;
+    }
+
+    .useSliderPlugin img{
+        width: 200px;
+        height: auto;
+        margin-left: -120px;
+    }
+
+    .useSliderPlugin p{
+        color: #5aaff4;
+        font-size: 1em;
+        text-align: left;
+        margin-left: -120px;
+        margin-right: 100px;
+        display: block;
+        padding-bottom: 100px;
+    }
+  }
+  
+@media screen and (max-width: 375px){
+    .sidebar {
+        width: 80%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a{
+        max-width: 100%;
+        padding: 10px 10px 10px 10px;
+        float: none;
+        text-align: left;
+    }
+    
+    .useSliderPlugin h1{
+        font-size: 2em;
+        padding-top: 30px;
+        text-align: right;
+        color: blue;
+        line-height: 2;
+        margin-right: 40px;
+    }
+
+    .useSliderPlugin img{
+        width: 220px;
+        margin-left: -15px;
+        position: relative;
+        margin-top: -30px;
+    }
+
+    .useSliderPlugin p{
+        color: #5aaff4;
+        font-size: 1em;
+        width: 200px;
+        text-align: right;
+        position: relative;
+        margin-right: 100px;
+        margin-top: 255px;
+        display: flex;
+        padding-bottom: 40px;
+    }
+  }
+
+@media screen and (min-width:1440px){
+      h1{
+        font-size: 2.5em;
+      }
+    }
+    
