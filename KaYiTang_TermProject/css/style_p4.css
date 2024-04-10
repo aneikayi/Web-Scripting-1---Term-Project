@@ -18,56 +18,16 @@ html body{
   overflow-y: auto;
   }
   
-.container{
+.container1{
     display: flex;
     width: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
   }
 
-h2,h3{
-    color: #58c5f0;
-    text-align: left;
-    font-size: 2em;
-  }
+.form-group { margin: 1.5rem auto }
+.container { margin: 150px auto; }
+.required-sign { color: red; }
 
-.about-column p{
-  font-size: 1.2em;
-  text-align: left;
-  line-height: 1.2;
-  color: rgb(63, 247, 171);
-  }
-
-main{
-    text-align: center;
-    padding: 20px;
-  }
-
-.about-column, #about-first {
-    width: 65%;
-    display: display-block;
-    margin-bottom: 20px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-
-.about-column img{
-    width: 50%;
-    border-radius: 200px;
-    margin-bottom: 10px;
-    justify-content: right;
-  }
-
-  .about-column img.veggi{
-    width: 20%;
-  }
-
-  .about-column.contactP P{
-    text-align: center;
-    width: 800px;
-  }
   
 nav a:hover{
     color: #ffffff;
@@ -168,35 +128,6 @@ footer.footer-bar{
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
     
-    h2,h3{
-        color: #58c5f0;
-        text-align: right;
-        margin-left: -90px;
-        margin-right: -30px;
-        font-size: 1.5em;
-    }
-
-    .about-column img.veggi{
-        width: 30%;
-        justify-content: center;
-    }
-
-    .about-column p{
-        font-size: 1em;
-        text-align: right;
-        line-height: 1.2;
-        color: rgb(63, 247, 171);
-        margin-left: -90px;
-        margin-right: -30px;
-    }
-
-    .about-column img{
-        width: 100%;
-        border-radius: 200px;
-        margin-left: -40px;
-        margin-bottom: 10px;
-        justify-content: right;
-    }
   }
   
 @media screen and (max-width: 375px) {
@@ -213,36 +144,6 @@ footer.footer-bar{
         text-align: left;
     }
 
-    .about-column img.veggi{
-        width: 70%;
-        margin-left: 80px;
-        margin-top: 50px
-    }
-
-    h2,h3{
-        color: #1190c2;
-        text-align: right;
-        margin-left: -90px;
-        margin-right: -30px;
-        font-size: 1.5em;
-    }
-
-    .about-column p{
-        font-size: 0.8em;
-        text-align: right;
-        line-height: 1.2;
-        color: rgb(63, 247, 171);
-        margin-left: -90px;
-        margin-right: -30px;
-    }
-
-    .about-column img {
-        width: 150%;
-        border-radius: 200px;
-        margin-left: -40px;
-        margin-bottom: 10px;
-        justify-content: right;
-    }
   }
 
 @media screen and (min-width:1440px){

@@ -11,14 +11,16 @@
 	
 	<script src="https://kit.fontawesome.com/efd2ff2659.js" crossorigin="anonymous"></script>
 
-    
-
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.0/superhero/bootstrap.min.css">
+	
 	<title>LALAYA Hotel</title>
+
 </head>
 
 <body>
 			
-	<div class="container">
+	<div class="container1">
 				
 		<div class="sidebar">
 		<nav id="mobile-menu">
@@ -31,12 +33,90 @@
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
+		</div>
 
-        <div>
+		<main>
+			<div class="jquery-script-clear"></div>
+<div class="container">
+  <form id="form"></form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/"></script>
+<script>
+  var User = function() {
+    var self = this;
 
-        </div>
+    self.id = 0;
+    self.username = '';
+    self.firstname = '';
+    self.lastname = '';
+    self.email = '';
+};
+var user = new User();
+const form = $('#form')
+$('#form').TieJS({bindingSource: user});
+var tiejs = form.data('tiejs').addFields([{
+            type: "text",
+            data: {
+                label: "Username",
+                name: "username",
+                placeholder: "Username",
+                attributes: ["autofocus"],
+                required: true
+            }
+        }, {
+            type: "text",
+            data: {
+                label: "First Name",
+                name: "firstname",
+                placeholder: "First Name"
+            }
+        }, {
+            type: "text",
+            data: {
+                label: "Last Name",
+                name: "lastname",
+                placeholder: "Last Name"
+            }
+        }, {
+            type: "email",
+            data: {
+                label: "Email",
+                name: "email",
+                placeholder: "Email Address",
+                required: true
+            }
+        }
+    ]).addBindings([{
+            "username": "username",
+            "firstname": "firstname",
+            "lastname": "lastname",
+            "email": "email"
+        }
+    ]);
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1VDDWMRSTH');
+</script><script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
 
-		
+	  </main>
+
 		<footer class="footer-bar">
 
 			<div class="footer-column">
@@ -57,13 +137,11 @@
 				</div>
 				</div>
 				<p>&copy; 2024 Lalaya Hotel. All Rights Reserved.</p>
-		
 		</footer>
+		
+	</div>
 
 	<script src="js/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
-	<script src="./js/imagesSlider.js"></script>
-
+	 
 </body>
 </html>
